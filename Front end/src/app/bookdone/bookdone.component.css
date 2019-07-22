@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400,300,600,700,800);
+
+.container {
+    max-width: 1200px !important;
+    margin: 80px 0;
+    padding-bottom:100px;
+    font-family: "Open Sans";
+}
+
+.container {
+    box-sizing: border-box;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+body {background-color: #f2f2f1;}
+
+/*-=-=-=-=-=-=-=-=-=-*/
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-= */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+	position: relative;
+	display:inline;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+.text-center {text-align: center !important;}
+/*-=-=-=-=-=-=-=-=-=-*/
+/* Style             */
+/*-=-=-=-=-=-=-=-=-= */
+.at-booking-type-wrap {
+	margin-left: auto;
+	margin-right:auto;
+	width:100%
+}
+.at-booking-section {
+	margin-bottom: 60px;
+}
+.at-booking-header {text-align:center;}
+.at-booking-header h5 {
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #199CDB;
+	margin-bottom: 5px;
+}
+.at-booking-header h3 {
+	font-size: 36px;
+	font-weight:600;
+	font-family: Montserrat;
+	margin: 0;
+}
+.at-booking-content {
+	margin-top: 50px;
+}
+.at-booking-vechile-type {
+	display: flex;
+	list-style:none;
+}
+.at-booking-vechile-type > li {
+	flex-grow: 1;
+	flex-basis:140px;
+	height:185px;
+	cursor: pointer;
+	padding-top: 25px;
+	text-align: center;
+	margin: 0 6px 12px 6px;
+	color: #333;
+	border-radius: 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+}
+.at-booking-vechile-icon {
+	padding: 28px 0;
+}
+.at-booking-vechile-type>li.at-booking-vechile-selected {
+	background-color: #20343d;
+	color: #fff;
+}
+.at-booking-vechile-type>li.at-booking-vechile-selected h4{
+	background-color: rgba(255,255,255,0.2);
+}
+.at-booking-vechile-head h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: Montserrat;
+	background-color: rgba(0,0,0,0.1);
+	padding: 15px 0;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.at-booking-package-head { display:flex;}
+.at-booking-package {
+	border: 1px solid #e1e1e1;
+	position: relative;
+	padding: 25px 0 45px 0;
+	text-align: center;
+	border-radius:5px;
+	background-color: #fff;
+}
+.at-booking-package h4 {
+	margin-top: 20px;
+	margin-bottom:40px;
+	color: #222;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: Lato;
+}
+.at-booking-package-price-duration {
+	background-color: #20343D;
+	color: #fff;
+	padding: 15px 0;
+}
+.at-booking-package-duration:before {
+	font-size:60px;
+	font-family: Lato;
+	color: #79858b;
+	font-weight: 100;
+	content:"|";
+	display: inline;
+	margin-right:10px;
+	margin-left:10px;
+}
+.at-booking-package-price , .at-booking-package-duration {
+	font-size:30px;
+	font-weight: 300;
+	font-family: Lato;
+	position: relative;
+	top: 0;
+	display: inline-block;
+	text-align: none;
+}
+.at-booking-package-price-decimal {
+	font-size:14px;
+	font-weight:300;
+	position:relative;
+	top: -10px;
+}
+.at-booking-package-price-duration {
+
+}
+.at-booking-package-service-list {
+	margin: 30px 0;
+	padding:0;
+	list-style:none;
+}
+.at-booking-package-service-list li { 
+	line-height: 28px; 
+	color: #666;
+	font-size:14px;
+}
+.at-booking-package-button {
+	bottom:30px;
+	left:0;
+	position:absolute;
+	text-align:center;
+	width:100%;
+}
+.at-booking-package-btn {
+	border:2px solid #20343D;
+	display: inline-block;
+	padding:15px 35px;
+	position:relative;
+	text-decoration: none;
+	line-height:1;
+	border-radius:999px;
+	color: #20343D;
+}
+.at-booking-service>div {
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+.at-booking-service {
+	border: 1px solid #e1e1e1;
+	padding: 15px;
+	background-color: #fff;
+	color: #222;
+	width:100%;
+	border-radius:5px;
+	box-sizing: border-box;
+}
+.at-booking-service>div.at-booking-service-name { width:30%; }
+.at-booking-service>div.at-booking-service-price { width: 15%;}
+.at-booking-service>div.at-booking-service-duration { width: 15%;}
+.at-booking-service-name h4 {
+	padding: 0;
+	margin: 10px 0;
+	font-size: 14px;
+	font-weight: 600;
+}
+.at-booking-service-price, .at-booking-service-duration {
+	font-size:14px;
+	color: rgba(0,0,0,0.5);
+	font-weight: 400;
+}
+
+
+.alignleft {text-align:left;}
+.at-booking-final-result>div {
+	float:left;
+	width: 41%;
+	text-align: right;
+	border: 1px solid #e1e1e1;
+	background-color:#fff;
+	color:#222;
+	padding: 25px 30px;
+	margin-right: 2%;
+}
+.at-booking-final-result>div:last-child { margin-right: 0; }
+.at-booking-final-duration i, .at-booking-final-price i {
+	float: left;
+	font-size:50px;
+	color: rgba(0,0,0,0.5);
+}
+.at-booking-final-duration h4, .at-booking-final-price h4 {
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+
+
+form {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Oswald', sans-serif;
+  }
+  
+
+
+.button {
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 20px;
+	letter-spacing: 4px;
+	position: relative;
+	background-color: #f9d342;
+	border: none;
+	color: rgb(10, 10, 10);
+	padding: 20px;
+	width: 200px;
+	text-align: center;
+	transition-duration: 0.4s;
+	overflow: hidden;
+	box-shadow: 0 5px 15px #193047;
+	border-radius: 4px;
+  }
+  
+  .button:hover {
+	background: #f9d342;
+	box-shadow: 0px 2px 10px 5px #ffffff;
+	color: #000;
+  }
+  
+  .button:after {
+	content: "";
+	background: #f9d342;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px !important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
+  }
+  
+  .button:active:after {
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
+  }
+  
+  .button:focus { outline:0; }
+  
